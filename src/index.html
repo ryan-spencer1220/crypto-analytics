@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crypto Will Rule Us!</title>
+    </head>
 <body>
+    <div class="container">
   <h2> Crypto will rule us. <h2>
   <table>
-    <button id="ticker-request"> Submit</button>
-    <colgroup>
-    </colgroup>
     <tr>
       <th>Ticker</th>
       <th>Name</th>
@@ -26,7 +23,14 @@
     <tr class="show-cardano"></tr>
     <tr class="show-polkadot"></tr>
     <tr class="show-polygon"></tr>
-  </table>
+    <tr class="show-tickers"></tr>
+  </table>    
+  <label for="ticker-input"></label> Tickers to add: </label>
+  <input id="ticker-input" type="text">
+  <button id="ticker-add"> Add</button>
+  <button id="ticker-request"> Submit</button>
+  <ul class="added-tickers"></ul>
   <div class="show-errors"></div>
+</div>
 </body>
 </html>
